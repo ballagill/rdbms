@@ -1,0 +1,5 @@
+I have examined the above code and following is the explanation of each of its part.
+
+The first statment is a procedure statement, The procedure with name 'audit_action' is created that will accept one attribute 'p_who' of "VARCHAR" data type when it will be called by trigger. it will store the value of 'p_who' in 'schema_user' column of 'audit' table in database. After doing this, the procedure will be terminated using 'END audit_action' statement.
+
+The next statement is a trigger statement, The trigger 'watch_it' is created that will call the "audit_action" procedure and pass the username to procedure when the user will log on the database.
